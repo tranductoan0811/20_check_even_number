@@ -1,20 +1,18 @@
 function checkNumber() {
 
   let number = +document.getElementById("num").value;
-  let number2 = number % 2
-  if (number2 == 0) {
+  let div = number % 2;
+  var result = "";
 
-    number = "Số nhập vào " + number + " là số chẵn ";
+  if (div == 0) {
+
+    result = alert("Số nhập vào " + number + " là số chẵn ");
 
   } else {
 
-    number = "Số nhập vào " + number + " là số lẻ ";
+    result =alert("Số nhập vào " + number + " là số lẻ ");
   }
 
- document.getElementById("result").innerHTML = number;
-
-
-
-
+ document.getElementById("result").innerHTML = result;
 
 }
